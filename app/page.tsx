@@ -1,14 +1,10 @@
-/* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
+import Header from "@/components/Header";
+import { NextPage } from "next";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <main className="flex min-h-screen items-center justify-between">
-      <div>
-        <title>Cameron's Portfolio</title>
-      </div>
-
-      {/* Header */}
+    <main className="w-screen min-h-screen">
+      <Header />
 
       {/* Hero */}
 
@@ -23,4 +19,6 @@ export default function Home() {
       {/* Contact Me */}
     </main>
   );
-}
+};
+
+export default Home;
