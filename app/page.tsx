@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -7,6 +8,9 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Hero */}
+      <section id="hero">
+      <Hero />
+      </section>
 
       {/* About */}
 
