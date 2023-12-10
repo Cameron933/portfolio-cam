@@ -4,12 +4,12 @@ import { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <main className="w-screen min-h-screen">
+    <main className="w-screen h-screen bg-[rgb(36,36,36)] text-white snap-y snap-mandatory overflow-scroll z-0">
       <Header />
 
       {/* Hero */}
-      <section id="hero">
-      <Hero />
+      <section id="hero" className="snap-center">
+        <Hero />
       </section>
 
       {/* About */}
