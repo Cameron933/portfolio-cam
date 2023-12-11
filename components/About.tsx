@@ -27,12 +27,12 @@ const About = (props: Props) => {
           Here is a <span className="underline decoration-[#F7AB0A]">little</span> background
         </h4>
         <p className="text-sm">
-          Hi, I`&apos;`m Cameron Huang, an IT professional specializing in full-stack development
+          Hi, I&apos;m Cameron Huang, an IT professional specializing in full-stack development
           with a passion for creating solutions that make a significant impact. I have a diverse set
           of skills that range from JavaScript, TypeScript, and Python to front-end technologies
           such as ReactJS and Next.js, and back-end technologies like Spring Boot and .NET. My
           proficiency extends to testing with Jest and JUnit 5, databases like MySQL and PostgreSQL,
-          and even DevOps with Docker and Vercel CI/CD. I`&apos;`ve had the privilege to work as a
+          and even DevOps with Docker and Vercel CI/CD. I&apos;ve had the privilege to work as a
           Full-stack Developer at Async Working where I gained valuable experience in microservice
           architecture and Agile methodologies. I was part of an 8-person team, developing a range
           of web applications and maintaining an AWS ECS-backed Jenkins CI/CD pipeline. I am proud
