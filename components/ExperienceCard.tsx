@@ -21,8 +21,23 @@ const ExperienceCard = (props: Props) => {
         }}
         className="w-32 h-32 rounded-full object-cover xl:h-[200px] xl:w-[200px] object-top"
         src="/Cam_selfie.jpg"
-        alt="Picture of the author"
+        alt=""
       />
+
+      <div>
+        <h4>Full-stack developer</h4>
+        <p>Cameron Huang</p>
+        <div>{/* a */}</div>
+        <p>Start work... -Ended</p>
+
+        <ul>
+          <li>Summary points</li>
+          <li>Summary points</li>
+          <li>Summary points</li>
+          <li>Summary points</li>
+          <li>Summary points</li>
+        </ul>
+      </div>
     </article>
   );
 };
