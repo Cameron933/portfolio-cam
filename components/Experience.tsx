@@ -21,7 +21,7 @@ const Experience = (props: Props) => {
         Experience
       </h3>
 
-      <div>
+      <div className="w-full flex space-x-5 overflow-x-auto p-10 snap-mandatory">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
