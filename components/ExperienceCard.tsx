@@ -20,7 +20,7 @@ const ExperienceCard = (props: Props) => {
         viewport={{
           once: true,
         }}
-        className="w-32 h-32 rounded-full object-cover xl:h-[200px] xl:w-[200px] object-top"
+        className="w-32 h-32 rounded-full object-cover xl:h-[200px] xl:w-[200px] object-center"
         src="/Cam_selfie.jpg"
         alt=""
       />
