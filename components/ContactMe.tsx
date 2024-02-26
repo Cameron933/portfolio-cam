@@ -13,7 +13,9 @@ const ContactMe = (props: Props) => {
           <span className="decoration-[#F7AB0A]/50 underline">Let&apos;s Talk.</span>
         </h4>
 
-        <div></div>
+        <div className="flex ">
+          <h4></h4>
+        </div>
       </div>
     </div>
   );
