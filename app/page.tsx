@@ -9,7 +9,7 @@ import { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <main className="w-screen h-screen bg-[rgb(36,36,36)] text-white snap-y snap-mandatory overflow-scroll z-0">
+    <main className="w-screen h-screen bg-[rgb(36,36,36)] text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
       <Header />
 
       <section id="hero" className="snap-start">
