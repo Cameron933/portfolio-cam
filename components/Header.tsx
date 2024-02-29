@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
+import Link from "next/link";
 
 type Props = {};
 
@@ -31,6 +32,7 @@ const Header = (props: Props) => {
       </motion.div>
 
       <motion.div
+        onClick={() => (window.location.href = "#contact")}
         initial={{
           x: -500,
           opacity: 0,
