@@ -3,11 +3,37 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-type Props = {};
+type Experience = {
+  id: number;
+  companyImg: string;
+  workTitle: string;
+  company: string;
+  techIconArray: TechIconItem[];
+  startAndEndDate: string;
+  summary: SummaryItem[];
+};
 
-const ExperienceCard = (props: Props) => {
+type TechIconItem = {
+  id: number;
+  path: string;
+  description: string;
+};
+
+type SummaryItem = {
+  id: number;
+  content: string;
+};
+
+const ExperienceCard = ({
+  companyImg,
+  workTitle,
+  company,
+  techIconArray,
+  startAndEndDate,
+  summary,
+}: Experience) => {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 transition-opacity duration-200">
       <motion.img
         initial={{
           opacity: 0,
@@ -21,44 +47,35 @@ const ExperienceCard = (props: Props) => {
           once: true,
         }}
         className="w-32 h-32 rounded-full object-cover xl:h-[200px] xl:w-[200px] object-center"
-        src="/Cam_selfie.jpg"
-        alt=""
+        src={companyImg}
+        alt="Company IMG"
       />
 
       <div className="px-0 md:px-10 ">
-        <h4 className="text-4xl font-light">Full-stack developer</h4>
-        <p className="font-bold text-2xl mt-1">Cameron Huang</p>
+        <h4 className="text-4xl font-light">{workTitle}</h4>
+        <p className="font-bold text-2xl mt-1">{company}</p>
         <div className="flex space-x-2 my-2">
-          <Image
-            className="h-10 w-10 rounded-full"
-            src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483cla8174556463-500x500.png"
-            width={200}
-            height={200}
-            alt=""
-          />
-          <Image
-            className="h-10 w-10 rounded-full"
-            src="/Cam_selfie.jpg"
-            width={200}
-            height={200}
-            alt=""
-          />
-          <Image
-            className="h-10 w-10 rounded-full"
-            src="/Cam_selfie.jpg"
-            width={200}
-            height={200}
-            alt=""
-          />
+          {techIconArray.map((item) => (
+            <React.Fragment key={item.id}>
+              <Image
+                className="h-10 w-10 rounded-full bg-white"
+                src={item.path}
+                width={200}
+                height={200}
+                alt={item.description}
+                title={item.description}
+              />
+            </React.Fragment>
+          ))}
         </div>
-        <p className="uppercase py-5 text-gray-300">Start work... -Ended</p>
+        <p className="uppercase py-5 text-gray-300">{startAndEndDate}</p>
 
         <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
+          {summary.map((item) => (
+            <React.Fragment key={item.id}>
+              <li className="text-sm">{item.content}</li>
+            </React.Fragment>
+          ))}
         </ul>
       </div>
     </article>

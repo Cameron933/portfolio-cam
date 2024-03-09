@@ -35,23 +35,31 @@ const About = (props: Props) => {
         <h4 className="text-4xl font-semibold">
           Here is a <span className="underline decoration-[#F7AB0A]">little</span> background
         </h4>
-        <p className="text-sm">
-          Hi, I&apos;m Cameron Huang, an IT professional specializing in full-stack development with
-          a passion for creating solutions that make a significant impact. I have a diverse set of
-          skills that range from JavaScript, TypeScript, and Python to front-end technologies such
-          as ReactJS and Next.js, and back-end technologies like Spring Boot and .NET. My
-          proficiency extends to testing with Jest and JUnit 5, databases like MySQL and PostgreSQL,
-          and even DevOps with Docker and Vercel CI/CD. I&apos;ve had the privilege to work as a
-          Full-stack Developer at Async Working where I gained valuable experience in microservice
-          architecture and Agile methodologies. I was part of an 8-person team, developing a range
-          of web applications and maintaining an AWS ECS-backed Jenkins CI/CD pipeline. I am proud
-          of the work we did there, especially the role I played in developing versatile UI
-          components and establishing robust backend RESTful APIs. My recent project, TunesSpire, a
-          music streaming platform, is a testament to my love for problem-solving and creating
-          user-centric solutions. Here, I leveraged my skills to achieve perfect Lighthouse
-          performance scores of 100/100. Before transitioning to tech, I worked as a Civil Engineer
-          at China Construction Third Engineering Bureau Co., Ltd. in China. The experience
-          instilled in me a strong foundation in project management and teamwork.
+        <p className="text-sm lg:text-base">
+          Hi, My name is Cameron (Chu) Huang, a recent Monash Master of IT graduate specializing in
+          full-stack development with a 🌟passion for creating solutions that make a difference.
+          <br />
+          <br />
+          Prior to the digital transition, I worked on several construction projects as a civil
+          engineer. On the construction site, we not only applied engineering techniques but also
+          dealt with site emergencies and did stakeholder management to ensure that the team&apos;s
+          work was carried out. This experience gave me a solid foundation in project management and
+          teamwork.
+          <br />
+          <br />I have a diverse set of skills that range from{" "}
+          <strong>HTML, CSS, JavaScript</strong> to front-end technologies such as{" "}
+          <strong>ReactJS</strong> and <strong>Next.js</strong>, and back-end technologies like{" "}
+          <strong>Express.js</strong> and <strong>Spring Boot</strong>. My proficiency extends to
+          testing with <strong>Jest</strong> and <strong>JUnit 5</strong>, databases like{" "}
+          <strong>MongoDB</strong> and <strong>PostgreSQL</strong>.
+          <br />
+          <br />
+          I&apos;ve had the privilege to work as a Full-stack Developer at Async Working where I
+          gained valuable experience in microservice architecture and Agile methodologies. I was
+          part of an 8-person team, developing a range of web applications and maintaining an{" "}
+          <strong>AWS</strong> ECS-backed Jenkins CI/CD pipeline. I am proud of the work we did
+          there, especially the role I played in developing versatile UI components and establishing
+          robust backend RESTful APIs.
         </p>
       </div>
     </motion.div>

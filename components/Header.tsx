@@ -26,9 +26,12 @@ const Header = (props: Props) => {
         }}
         className="flex flex-row items-center"
       >
-        <SocialIcon url="https://www.youtube.com" fgColor="gray" bgColor="transparent" />
-        <SocialIcon url="https://www.youtube.com" fgColor="gray" bgColor="transparent" />
-        <SocialIcon url="https://www.youtube.com" fgColor="gray" bgColor="transparent" />
+        <SocialIcon
+          url="https://www.linkedin.com/in/cam-huang/"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <SocialIcon url="https://github.com/Cameron933" fgColor="gray" bgColor="transparent" />
       </motion.div>
 
       <motion.div
