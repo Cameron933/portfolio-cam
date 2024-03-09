@@ -166,31 +166,22 @@ const Experience = (props: Props) => {
         {
           id: 1,
           content:
-            "Agile development with Scrum methodology, Jira for tracking productivity, GitHub workflow for version control",
+            "Reviewing blueprint drawings, and specifications to ensure compliance with project requirements",
         },
         {
           id: 2,
           content:
-            "Complete AB testing with React.js(Next.js) front-end and Springboot/Node.js(Express.js) back-end",
+            "Prepare feasible construction plans and perform weekly evaluations. Scheduling work to various subcontractors and coordinating the sequence of work for each unit to ensure a smooth flow of work to ensure successful completion of the project",
         },
         {
           id: 3,
           content:
-            "Produce high-quality code with comprehensive tests(Jest, React testing library, JUnit 5)",
+            "Conducting site inspections to monitor acceptance of each process, identify potential issues, and ensure compliance with quality specifications",
         },
         {
           id: 4,
-          content: "Implement code review for peers and provide revision suggestions",
-        },
-        {
-          id: 5,
           content:
-            "Contribute to sprint planning, design, build, refactor and testing of components",
-        },
-        {
-          id: 6,
-          content:
-            "Managed an AWS ECS-backed Jenkins CI/CD pipeline to automate code deployment to UAT and subsequent production release upon successful user acceptance tests",
+            "Keeping accurate project records, preparing reports, and documenting project progress for clients and stakeholders",
         },
       ],
     },
