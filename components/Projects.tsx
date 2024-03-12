@@ -43,7 +43,9 @@ const Projects = (props: Props) => {
       }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Projects</h3>
+      <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+        Projects
+      </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
         {projects.map((project, i) => (
@@ -53,7 +55,7 @@ const Projects = (props: Props) => {
           >
             <motion.img
               initial={{
-                y: -300,
+                y: -100,
                 opacity: 0,
               }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -65,8 +67,8 @@ const Projects = (props: Props) => {
               alt=""
             />
 
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+            <div className="space-y-2 md:space-y-4 lg:space-y-10 px-0 md:px-10 max-w-6xl">
+              <h4 className="text-xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>{" "}
@@ -80,10 +82,7 @@ const Projects = (props: Props) => {
                 development with a passion for creating solutions that make a significant impact. I
                 have a diverse set of skills that range from JavaScript, TypeScript, and Python to
                 front-end technologies such as ReactJS and Next.js, and back-end technologies like
-                Spring Boot and .NET. My proficiency extends to testing with Jest and JUnit 5,
-                databases like MySQL and PostgreSQL, and even DevOps with Docker and Vercel CI/CD.
-                I&apos;ve had the privilege to work as a Full-stack Developer at Async Working where
-                I gained valuable experience in microservice architecture and Agile methodologies.
+                Spring Boot
               </p>
             </div>
           </div>
