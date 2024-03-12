@@ -31,8 +31,8 @@ const About = (props: Props) => {
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:h-[600px] xl:w-[500px]"
       /> */}
 
-      <div className="flex flex-col items-center space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="flex flex-col items-center space-y-4 px-0 md:px-10">
+        <h4 className="text-lg md:text-4xl font-semibold pt-10 md:pt-0">
           Here is a <span className="underline decoration-[#F7AB0A]">little</span> background
         </h4>
         <p className="text-sm lg:text-base">
