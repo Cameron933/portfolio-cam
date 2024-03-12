@@ -6,6 +6,32 @@ type Props = {};
 
 const Projects = (props: Props) => {
   const projects = [1, 2, 3, 4, 5];
+  const projectsData = [
+    {
+      id: 1,
+      projectName: "CourtCanva",
+      projectImg: "",
+      description: "",
+      url: "https://www.courtcanva.com/",
+      tech: [],
+    },
+    {
+      id: 2,
+      projectName: "",
+      projectImg: "",
+      description: "",
+      url: "",
+      tech: [],
+    },
+    {
+      id: 3,
+      projectName: "",
+      projectImg: "",
+      description: "",
+      url: "",
+      tech: [],
+    },
+  ];
   return (
     <motion.div
       initial={{
@@ -46,6 +72,8 @@ const Projects = (props: Props) => {
                 </span>{" "}
                 UPS clone
               </h4>
+
+              <div className="flex items-center justify-center space-x-2"></div>
 
               <p className="text-lg text-center md:text-left">
                 Hi, I&apos;m Cameron Huang, an IT professional specializing in full-stack
