@@ -33,7 +33,7 @@ const ExperienceCard = ({
   summary,
 }: Experience) => {
   return (
-    <article className="border border-[#F7AB0A] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 transition-opacity duration-200">
+    <article className="border border-[#F7AB0A] flex flex-col rounded-lg items-center space-y-2 md:space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-4 md:p-6 lg:p10 hover:opacity-100 opacity-40 transition-opacity duration-200">
       <motion.img
         initial={{
           opacity: 0,
@@ -46,14 +46,14 @@ const ExperienceCard = ({
         viewport={{
           once: true,
         }}
-        className="w-32 h-32 rounded-full object-cover xl:h-[200px] xl:w-[200px] object-center"
+        className="w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full object-cover xl:h-[200px] xl:w-[200px] object-center"
         src={companyImg}
         alt="Company IMG"
       />
 
       <div className="px-0 md:px-10 ">
-        <h4 className="text-4xl font-light">{workTitle}</h4>
-        <p className="font-bold text-2xl mt-1">{company}</p>
+        <h4 className="text-lg md:text-2xl lg:text-4xl font-light">{workTitle}</h4>
+        <p className="font-bold text-lg md:text-xl lg:text-2xl mt-1">{company}</p>
         <div className="flex space-x-2 my-2">
           {techIconArray.map((item) => (
             <React.Fragment key={item.id}>
