@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -52,6 +52,10 @@ const Projects = (props: Props) => {
       tech: "javaScript, Moment.js, Bootstrap, C#, ASP.NET, SQL, Google Calendar, jQuery, SendGrid, Google Map API",
     },
   ];
+  const openProjectUrl = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <motion.div
       initial={{
@@ -73,20 +77,33 @@ const Projects = (props: Props) => {
             key={item.id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
           >
-            <motion.img
-              className="w-2/5 h-auto cursor-pointer"
-              initial={{
-                y: -100,
-                opacity: 0,
-              }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1.2,
-              }}
-              viewport={{ once: true }}
-              src={item.projectImg}
-              alt={`Project Img of ${item.projectName}`}
-            />
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative flex items-center justify-center w-2/5 h-auto"
+              onClick={() => openProjectUrl(item.url)}
+            >
+              <motion.img
+                initial={{
+                  y: -100,
+                  opacity: 0,
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1.2,
+                }}
+                viewport={{ once: true }}
+                src={item.projectImg}
+                alt={`Project Img of ${item.projectName}`}
+                className="cursor-pointer "
+              />
+              <motion.div
+                whileHover={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xl"
+              >
+                Click to visit the website or gitHub
+              </motion.div>
+            </motion.div>
 
             <div className="space-y-2 md:space-y-4 lg:space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-xl md:text-4xl font-semibold text-center">
