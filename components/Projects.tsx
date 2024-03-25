@@ -10,7 +10,7 @@ const Projects = (props: Props) => {
     {
       id: 1,
       projectName: "CourtCanva",
-      projectImg: "",
+      projectImg: "/CourtCanva.png",
       description: "",
       url: "https://www.courtcanva.com/",
       tech: [],
