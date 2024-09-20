@@ -30,15 +30,6 @@ const Hero = (props: Props) => {
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
-        <h1 className="text-2xl md:text-5xl lg:text-6xl font-semibold scroll-px-10">
-          <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
-        </h1>
-        <h1 className="text-2xl md:text-5xl lg:text-6xl font-semibold scroll-px-10">
-          <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
-        </h1>
-        a
         <div className="pt-5">
           <Link href="#about">
             <button className="heroButton">About</button>
